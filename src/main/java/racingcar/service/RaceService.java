@@ -8,9 +8,9 @@ import racingcar.domain.rule.MoveRule;
 import java.util.List;
 
 public class RaceService {
-    private final NumberGenerator generator; // DI
-    private final MoveRule rule;             // DI
-    private Cars cars;                       // 한 판의 상태 보관
+    private final NumberGenerator generator;
+    private final MoveRule rule;
+    private Cars cars;
 
     public RaceService(NumberGenerator generator, MoveRule rule) {
         this.generator = generator;

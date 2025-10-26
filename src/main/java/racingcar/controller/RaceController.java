@@ -8,14 +8,14 @@ import racingcar.view.OutputView;
 import java.util.List;
 
 public class RaceController {
-    private final RaceService raceService; // DI
+    private final RaceService raceService;
 
     public RaceController(RaceService raceService) {
         this.raceService = raceService;
     }
 
     public void run() {
-        List<String> names = InputView.readCarNames();     // 입력
+        List<String> names = InputView.readCarNames();
         int attempts = InputView.readAttemptCount();
 
         raceService.registerCars(names);                        // Cars 준비
